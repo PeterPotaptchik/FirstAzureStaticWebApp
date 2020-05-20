@@ -1,32 +1,31 @@
 
 header{
-  background-image: url('images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100%;
-  width: 100%;
-  padding: 10px; /* Why? */
-  color: white;
-  text-align: center;
+  background-image: url('images/background.jpg'); /* Adds background image. */
+  background-repeat: no-repeat; /* Do not repeat background image to fill element (default repeats). */
+  background-size: 100% 100%; /* Sets width then height of background image to be 100% of container. */
+  color: white; /* Text color */
+  text-align: center; /* Center text horizontally. */
+}
+
+section {
+  background-color: blue;
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
     margin: 0;  /* Why? */
 }
 
-  .#home {
-    height: 200px;
-    position: relative;
-    border: 3px solid green;
-  }
+/* A section that will take up the full viewport (screen). */
+.fullscreen {
+  height: 100vh; /* Set height 100% of viewport (screen) height. */
+  width: 100wh; /* Set width 100% of viewport (screen) width. */
+}
 
-  .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+/* An element that will have all of its children centred horizontally and vertically
+using flexbox. */
+.center {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Vertical centering (main axis)*/
+  align-items: center;  /* Horizontal centering (cross axis)*/
+  flex-direction: column; /* Establishes vertical direction as main axis. Elements will be placed vertically. */
   }
