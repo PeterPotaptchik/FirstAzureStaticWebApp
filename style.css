@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
 header{
   background-image: url('images/background.jpg'); /* Adds background image. */
@@ -5,10 +6,11 @@ header{
   background-size: 100% 100%; /* Sets width then height of background image to be 100% of container. */
   color: white; /* Text color */
   text-align: center; /* Center text horizontally. */
+  font-family: "Permanent Marker";
 }
 
 section {
-  background-color: blue;
+  overflow: hidden; /* Content that overflows a section will not be visible. */
 }
 
 html, body {
@@ -28,4 +30,9 @@ using flexbox. */
   justify-content: center; /* Vertical centering (main axis)*/
   align-items: center;  /* Horizontal centering (cross axis)*/
   flex-direction: column; /* Establishes vertical direction as main axis. Elements will be placed vertically. */
+  }
+
+/* Text will have green colour. */
+  .green {
+    color: #02ffb7;
   }
