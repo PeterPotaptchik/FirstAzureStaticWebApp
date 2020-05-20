@@ -1,3 +1,4 @@
+
 header{
   background-image: url('images/background.jpg');
   background-repeat: no-repeat;
@@ -14,3 +15,18 @@ html, body {
     width: 100%;
     margin: 0;  /* Why? */
 }
+
+  .#home {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
