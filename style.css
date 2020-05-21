@@ -3,10 +3,15 @@
 header{
   background-image: url('images/background.jpg'); /* Adds background image. */
   background-repeat: no-repeat; /* Do not repeat background image to fill element (default repeats). */
-  background-size: 100% 100%; /* Sets width then height of background image to be 100% of container. */
+  background-size: cover; /* Sets width then height of background image to be 100% of container. */
   color: white; /* Text color */
   text-align: center; /* Center text horizontally. */
   font-family: "Permanent Marker";
+  background-position-x: center;
+    background-position-y: top;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
 }
 
 section {
@@ -15,6 +20,10 @@ section {
 
 html, body {
     margin: 0;  /* Why? */
+}
+
+#name {
+  font-size: 4.5em;
 }
 
 /* A section that will take up the full viewport (screen). */
